@@ -1,64 +1,38 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SatriaF.Design</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papErFYYVlHwI6/UpMvOYTHHy6oWBBU0hP5Vn0sAgxzNk9CWyBq4F5RtxI5B2O/v8eD+7bNfZ52+PkqVKv8CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-RXf+QSDCUqG5I1oWX9fOrTZJrZXx6KvxI9ZpFqV0DuvP2w1OEi9BMfErAwGp+lmFJFDl8Zr3V6uC9uI6L+my0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <body class="bg-gray-100 text-gray-800">
-
-    <!-- Navbar -->
-    <header class="bg-gray-100 px-6 py-4 shadow-md" style="background-color: #EDEDED;">
-      <div class="flex items-center justify-between">
-        <!-- Kiri: Logo -->
-        <div class="flex items-center space-x-4">
-          <img src="img/faviconwhite.svg" alt="SatriaF.Design Logo" class="w-10 h-10">
-          <!-- Navigasi Desktop -->
-          <nav class="hidden md:flex space-x-6 text-gray-800 font-medium">
-            <a href="#about" class="hover:text-blue-600">About</a>
-            <a href="#service" class="hover:text-blue-600">Service</a>
-            <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
-            <a href="#contact" class="hover:text-blue-600">Contact</a>
-          </nav>
-        </div>
-  
-        <!-- Sosmed + Hamburger -->
-        <div class="flex items-center space-x-4">
-          <!-- Sosmed Desktop -->
-          <div class="hidden md:flex space-x-4">
-            <a href="https://instagram.com/satriaf.design" target="_blank">
-              <img src="img/instagram.svg" alt="Instagram" class="w-5 h-5">
-            </a>
-            <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
-              <img src="img/facebook.svg" alt="Facebook" class="w-5 h-5">
-            </a>
-            <a href="https://wa.me/+6289634196660" target="_blank">
-              <img src="img/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
-            </a>
-          </div>
-  
-          <!-- Hamburger Button (mobile only) -->
-          <button id="menu-btn" class="md:hidden focus:outline-none">
-            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
+  <!-- Navbar -->
+  <header class="relative bg-gray-100 px-6 py-4 shadow-md" style="background-color: #EDEDED;">
+    <div class="flex items-center justify-between">
+      <!-- Logo + Brand -->
+      <div class="flex items-center space-x-4">
+        <img src="img/faviconwhite.svg" alt="SatriaF.Design Logo" class="w-10 h-10">
+        <span class="text-lg font-semibold text-gray-800">SatriaF.Design</span>
       </div>
-  
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-4 text-gray-800 font-medium">
-        <a href="#about" class="block hover:text-blue-600">About</a>
-        <a href="#service" class="block hover:text-blue-600">Service</a>
-        <a href="#portfolio" class="block hover:text-blue-600">Portfolio</a>
-        <a href="#contact" class="block hover:text-blue-600">Contact</a>
-        <div class="flex space-x-4 pt-2 border-t pt-4">
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-800 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center space-x-6 font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#service" class="hover:text-blue-600">Service</a>
+        <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <div class="flex space-x-4 pl-4">
           <a href="https://instagram.com/satriaf.design" target="_blank">
             <img src="img/instagram.svg" alt="Instagram" class="w-5 h-5">
           </a>
@@ -69,28 +43,46 @@
             <img src="img/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
           </a>
         </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-[#EDEDED] z-50 text-center py-6 space-y-4 text-gray-800 font-medium md:hidden shadow-md transition-all duration-300 ease-in-out">
+      <a href="#about" class="block hover:text-blue-600">About</a>
+      <a href="#service" class="block hover:text-blue-600">Service</a>
+      <a href="#portfolio" class="block hover:text-blue-600">Portfolio</a>
+      <a href="#contact" class="block hover:text-blue-600">Contact</a>
+      <div class="flex justify-center space-x-4 pt-4 border-t border-gray-300">
+        <a href="https://instagram.com/satriaf.design" target="_blank">
+          <img src="img/instagram.svg" alt="Instagram" class="w-5 h-5">
+        </a>
+        <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
+          <img src="img/facebook.svg" alt="Facebook" class="w-5 h-5">
+        </a>
+        <a href="https://wa.me/+6289634196660" target="_blank">
+          <img src="img/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
+        </a>
       </div>
-    </header>
-  
-    <!-- Tambahkan Script -->
-    <script>
-      const btn = document.getElementById('menu-btn');
-      const menu = document.getElementById('mobile-menu');
-  
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
-    </script>
-  
+    </div>
+  </header>
 
-  <!-- Hero Section -->  
-
-  <section class="flex flex-col justify-center items-center text-center bg-gray-100 min-h-[65vh] px-4" style="background-color: #EDEDED;">
-  <h1 class="text-3xl md:text-5xl font-semibold mb-10">Profesional Designer & Print Out</h1>
-  <img src="img/logo.svg" alt="SatriaF.Design Logo" class="w-80 md:w-[28rem] mb-0">
-  <p class="text-xl md:text-2xl text-gray-700 font-medium tracking-wide mb-8">creative.reliable.credible.</p>
-  <p class="text-lg md:text-2xl mb-10">Print Product | Graphic Design | WebDev</p>
-  <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white px-10 py-3 rounded-lg transition">Let’s Get Started</a>
+  <!-- Hero Section -->
+  <section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-4 bg-[#EDEDED]">
+    <img src="img/logo.svg" alt="SatriaF.Design Logo" class="w-28 md:w-44 lg:w-52 mb-6">
+    <p class="text-base md:text-lg text-gray-600 italic mb-2 tracking-wide">creative.reliable.credible.</p>
+    <p class="text-sm md:text-lg text-gray-700 mb-6">Print Product | Graphic Design | WebDev</p>
+    <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-sm md:text-base rounded-lg transition shadow-md">
+      Let’s Get Started
+    </a>
   </section>
+
+  <!-- Script Toggle -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
