@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SatriaF.Design</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body.loading {
+      visibility: hidden;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="loading bg-gray-100 text-gray-800">
+
   <!-- Navbar -->
   <header class="relative bg-gray-100 px-6 py-4 shadow-md" style="background-color: #EDEDED;">
     <div class="flex items-center justify-between">
+
       <!-- Logo + Brand -->
       <div class="flex items-center space-x-4">
-        <img src="img/faviconwhite.svg" alt="SatriaF.Design Logo" class="w-10 h-10">
-        <span class="text-lg font-semibold text-gray-800">SatriaF.Design</span>
+          <a href="#home" class="flex items-center space-x-3">
+            <img src="img/faviconwhite.svg" alt="Logo" class="w-10 h-10">
+            <span class="text-lg font-semibold text-gray-800 hover:text-blue-600 transition">SatriaF.Design</span>
+          </a>
       </div>
 
       <!-- Hamburger Button -->
       <div class="md:hidden">
-        <button id="menu-btn" class="text-gray-800 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+          <button id="menu-btn" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
       </div>
 
       <!-- Desktop Menu -->
@@ -32,18 +41,23 @@
         <a href="#service" class="hover:text-blue-600">Service</a>
         <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
+
         <div class="flex space-x-4 pl-4">
           <a href="https://instagram.com/satriaf.design" target="_blank">
             <img src="img/instagram.svg" alt="Instagram" class="w-5 h-5">
           </a>
+
           <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
             <img src="img/facebook.svg" alt="Facebook" class="w-5 h-5">
           </a>
+
           <a href="https://wa.me/+6289634196660" target="_blank">
             <img src="img/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
           </a>
         </div>
+
       </nav>
+
     </div>
 
     <!-- Mobile Menu -->
@@ -52,22 +66,26 @@
       <a href="#service" class="block hover:text-blue-600">Service</a>
       <a href="#portfolio" class="block hover:text-blue-600">Portfolio</a>
       <a href="#contact" class="block hover:text-blue-600">Contact</a>
+
       <div class="flex justify-center space-x-4 pt-4 border-t border-gray-300">
         <a href="https://instagram.com/satriaf.design" target="_blank">
           <img src="img/instagram.svg" alt="Instagram" class="w-5 h-5">
         </a>
+
         <a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank">
           <img src="img/facebook.svg" alt="Facebook" class="w-5 h-5">
         </a>
+
         <a href="https://wa.me/+6289634196660" target="_blank">
           <img src="img/whatsapp.svg" alt="WhatsApp" class="w-5 h-5">
         </a>
       </div>
+
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-4 bg-[#EDEDED]">
+  <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center text-center px-4 bg-[#EDEDED]">
     <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-10 text-center">
       Profesional Designer & Printout
     </h1>    
@@ -76,8 +94,8 @@
 
     <p class="text-base md:text-lg text-gray-600 italic mb-2 tracking-wide">creative.reliable.credible.</p>
     <p class="text-sm md:text-lg text-gray-700 mb-6">Print Product | Graphic Design | WebDev</p>
-    <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-sm md:text-base rounded-lg transition shadow-md">
-      Let’s Get Started
+    <a href="#service" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-sm md:text-base font-semibold transition">
+    Let’s Get Started
     </a>
   </section>
 
@@ -89,5 +107,135 @@
       menu.classList.toggle('hidden');
     });
   </script>
+
+  <section id="about" class="bg-[#1e1e1e] text-white py-20 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">About</h2>
+
+    <!-- Who We Are -->
+    <div class="max-w-3xl mx-auto mb-12">
+      <h3 class="text-2xl font-semibold mb-4">Who We Are</h3>
+      <p class="text-base md:text-lg leading-relaxed text-gray-300">
+        SatriaF.Design adalah studio kreatif independen yang berfokus pada solusi visual profesional
+        mulai dari produksi cetak, desain grafis, hingga pengembangan web.
+        Kami hadir untuk brand yang menuntut dampak visual yang kuat, kredibilitas, dan konsistensi.
+      </p>
+    </div>
+
+    <!-- What We Believe -->
+    <div class="max-w-3xl mx-auto mb-12">
+      <h3 class="text-2xl font-semibold mb-4">What We Believe</h3>
+      <p class="text-base md:text-lg leading-relaxed text-gray-300">
+        Kami percaya bahwa desain bukan hanya tentang estetika,
+        tapi juga tentang membangun kepercayaan, menyampaikan pesan,
+        dan mendukung pertumbuhan bisnis. Karena itu,
+        setiap karya kami dirancang dengan pendekatan yang strategis,
+        fungsional, dan orisinal.
+      </p>
+    </div>
+
+    <!-- Our Values -->
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+      <p class="text-base md:text-lg leading-relaxed text-gray-300">
+        <strong>Creative:</strong> Selalu menghadirkan ide segar dan relevan<br>
+        <strong>Reliable:</strong> Komitmen waktu dan kualitas adalah prioritas kami<br>
+        <strong>Credible:</strong> Karya kami dapat diandalkan dan mencerminkan integritas
+      </p>
+    </div>
+  </section>
+
+<section id="service" class="bg-[#ededed] py-20 px-6 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gray-800">Service</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+    <!-- Print Product -->
+    <div class="flex flex-col items-center text-gray-800">
+      <img src="img/printer.svg" alt="Print Product Icon" class="w-14 h-14 mb-4">
+      <h3 class="text-xl font-semibold mb-1">Print Product</h3>
+      <p class="text-sm md:text-base text-gray-600">Banners, Stickers<br>Digital Print and Packaging.</p>
+    </div>
+
+    <!-- Graphic Design -->
+    <div class="flex flex-col items-center text-gray-800">
+      <img src="img/designpen.svg" alt="Graphic Design Icon" class="w-14 h-14 mb-4">
+      <h3 class="text-xl font-semibold mb-1">Graphic Design</h3>
+      <p class="text-sm md:text-base text-gray-600">Logo, Desain Media,<br>Layout, 3D Modeling and more</p>
+    </div>
+
+    <!-- WebDev -->
+    <div class="flex flex-col items-center text-gray-800">
+      <img src="img/code.svg" alt="Web Development Icon" class="w-14 h-14 mb-4">
+      <h3 class="text-xl font-semibold mb-1">WebDev</h3>
+      <p class="text-sm md:text-base text-gray-600">Website, WebDesign<br>Web Consept, WebApps</p>
+    </div>
+
+    <!-- Branding -->
+    <div class="flex flex-col items-center text-gray-800">
+      <img src="img/brand.svg" alt="Branding Icon" class="w-14 h-14 mb-4">
+      <h3 class="text-xl font-semibold mb-1">Branding</h3>
+      <p class="text-sm md:text-base text-gray-600">Visual Identities, Mockup <br>Branding psychology, Rebranding</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="bg-white py-20 px-6 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Creative Collection</h2>
+  <p class="text-sm md:text-base text-gray-600 mb-12 italic">Curated works from our exclusive design line</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+    <!-- Box 1 -->
+    <div class="flex flex-col items-center">
+      <img src="img/blackbox.png" alt="Catalog Website" class="w-full max-w-xs md:max-w-sm rounded shadow-md mb-4">
+      <h3 class="text-lg md:text-xl font-semibold text-gray-800">Catalog Website</h3>
+      <p class="text-sm md:text-base text-gray-600">Interactive Brand Catalog</p>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="flex flex-col items-center">
+      <img src="img/whiteborex.png" alt="Exclusive Creative Series" class="w-full max-w-xs md:max-w-sm rounded shadow-md mb-4">
+      <h3 class="text-lg md:text-xl font-semibold text-gray-800">Exclusive Creative Series</h3>
+      <p class="text-sm md:text-base text-gray-600">Limited Edition Visual Design</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gradient-to-b from-[#B11226] to-[#7A1212] text-white ... text-white text-center px-6 py-16">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact</h2>
+  <p class="text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+    Punya project yang ingin direalisasikan?<br>
+    Ingin berdiskusi atau sekadar bertanya seputar layanan kami?<br>
+    Jangan ragu untuk menghubungi kami.<br>
+    Kami siap membantu mewujudkan solusi desain dan visual yang sesuai dengan kebutuhan brand Anda.
+  </p>
+
+  <div class="text-sm md:text-base leading-relaxed space-y-2 text-white font-light">
+    <p><strong>Email:</strong> ferdiansyah@gmail.com</p>
+    <p><a href="https://instagram.com/satriaf.design" target="_blank"><strong>IG:</strong> satriaf.design</a></p>
+    <p><a href="https://facebook.com/satria.ferdiansyah.sf" target="_blank"><strong>FB:</strong> Satria Ferdiansyah</a></p>
+    <p><a href="https://wa.me/+6289634196660" target="_blank"><strong>WA:</strong> 089634196660</a></p>
+    <p><strong>Lokasi:</strong> Indonesia - Bandar Lampung</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#1e1e1e] text-white text-center py-4 text-sm">
+  Footer – <strong>SatriaF.Design</strong> 2025
+</footer>
+
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      // Scroll to top and remove hash
+      window.scrollTo(0, 0);
+      history.replaceState("", document.title, window.location.pathname + window.location.search);
+
+      // Tampilkan halaman setelah semuanya beres
+      document.body.classList.remove("loading");
+    }, 10);
+  });
+</script>
 </body>
 </html>
